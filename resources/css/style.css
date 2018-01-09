@@ -1,0 +1,13 @@
+html{
+  font-size: 20px;
+}
+
+/*header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 24px;
+  border: solid 1px red;
+}
