@@ -1,5 +1,6 @@
 html{
   font-size: 20px;
+  background-color: #F3F3F3
 }
 .container img{
   max-width: 100%;
@@ -10,6 +11,7 @@ html{
 .main_content {
   position: relative;
   top: 64px;
+  background-image: url("/Projects/colmar_cademy/resources/media/images/Paper_new.jpg");
 }
 /*header*/
 
@@ -17,9 +19,9 @@ header {
   height: 64px;
   width: 100%;
   position: fixed;
-  background-color:#00836D;
+  background: linear-gradient(#C3204C,#841552);
   z-index: 10;
-  opacity: 0.75;
+  opacity: 0.90;
   /*flex commands*/
   display: flex;
   justify-content: center;
@@ -72,8 +74,8 @@ align-items: center;
   /*border: solid red 1px;*/
 }
 #banner .content {
-  width: 30%;
-  max-width: 250px;
+  width: 400px;
+  height: 200px;
   padding-left: 24px;
   background-color: #DFDFDF;
   /*flex commands*/
@@ -106,12 +108,12 @@ align-items: center;
   /*border: solid 1px;*/
   /*flex commands*/
   display: flex;
+  justify-content: space-between;
 }
 /*left*/
 .information_left {
   padding: 32px 24px;
   width: 65%;
-  border-right: 1px;
   line-height: 1.5rem;
   /*flex commands*/
   display: flex;
@@ -136,7 +138,7 @@ align-items: center;
   top: 16px; /*makes left&right images level*/
 }
 .information_right .item {
-  /*border: solid 1px;*/
+  border-left: solid 1px;
   padding: 16px;
   line-height: 2rem;
   /*flex commands*/
@@ -152,6 +154,10 @@ align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
   width: 65%;
+}
+.information_right .border_middle {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
 }
 
 /*Course section*/
@@ -169,8 +175,13 @@ align-items: center;
 }
 .content_container {
   /*border: solid 1px;*/
+  padding: 0.5rem;
   background-color: white;
   width: 30%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5rem;
 }
 .classes  h1 {
   font-size: 1.5rem;
