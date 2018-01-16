@@ -9,9 +9,20 @@ html{
   overflow: hidden;
 }
 .main_content {
+  background-image: url("../media/images/Paper_new");
+  background-size: cover;
+}
+#page1 ,
+#page2{
   position: relative;
-  top: 64px;
-  background-image: url("/Projects/colmar_cademy/resources/media/images/Paper_new.jpg");
+  top: 75px;
+  margin: 0% 10%;
+  margin-bottom: 5%;
+  background-color: #FFFAE2;
+  box-shadow: 5px 5px 20px #888;
+
+
+
 }
 /*header*/
 
@@ -58,22 +69,22 @@ header h3{
 
 /*banner section*/
 
-#banner {
+.banner {
 height: 25rem;
 /*border: solid blue 1px;*/
-background-color: white;
+/*background-color: white;*/
 padding: 32px 24px;
 /*flex commands*/
 display: flex;
 align-items: center;
 }
 
-#banner .container {
+.banner .container {
   width: 60%;
   height: 100%;
   /*border: solid red 1px;*/
 }
-#banner .content {
+.banner .content {
   width: 400px;
   height: 200px;
   padding-left: 24px;
@@ -83,11 +94,11 @@ align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
-#banner h1 {
+.banner h1 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-#banner .button {
+.banner .button {
   background-color: #262D27;
   color: white;
   height: 32px;
@@ -97,14 +108,14 @@ align-items: center;
   align-items: center;
 }
 @media only screen and (max-width: 1024px) {
-  #banner {
+  .banner {
     height: 20rem;
   }
 }
 
 /*information section*/
 
-#information_main {
+.information_main {
   /*border: solid 1px;*/
   /*flex commands*/
   display: flex;
@@ -162,8 +173,8 @@ align-items: center;
 
 /*Course section*/
 
-#courses {
-  background-color: white;
+.courses {
+  /*background-color: white;*/
   padding: 32px 72px;
 }
 .classes {
@@ -189,7 +200,7 @@ align-items: center;
 }
 
 /*Thesis Section */
-#thesis {
+.thesis {
   padding: 12px 24px 32px 24px;
   height: 35rem;
   /*flex commadns*/
