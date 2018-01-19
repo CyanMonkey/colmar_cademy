@@ -11,6 +11,8 @@ html{
 .main_content {
   background-image: url("../media/images/Paper_new");
   background-size: cover;
+  height: 163rem;
+  width: auto;
 }
 #page1 ,
 #page2{
@@ -19,7 +21,7 @@ html{
   margin: 0% 10%;
   margin-bottom: 5%;
   background-color: #FFFAE2;
-  box-shadow: 5px 5px 20px #888;
+  box-shadow: 5px 5px 20px #855;
 
 
 
@@ -76,7 +78,7 @@ padding: 32px 24px;
 /*flex commands*/
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: space-evenly;
 }
 
 .banner .container {
@@ -84,11 +86,10 @@ justify-content: space-around;
   height: 100%;
   /*border: solid red 1px;*/
 }
-.banner .content {
-  width: 400px;
-  height: 200px;
-  padding-left: 24px;
-  background-color: #DFDFDF;
+.banner .content_sticky {
+  width: 300px;
+  height: 250px;
+  background-color: #FFDD86;
   /*flex commands*/
   display: flex;
   flex-direction: column;
@@ -96,9 +97,21 @@ justify-content: space-around;
   align-items: center;
   text-align: center;
 }
+.sticky {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#FFDD86,#F5F5DC);
+  box-shadow: 5px 8px 15px #855E42;
+  /*flex commands*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .banner h1 {
   font-size: 1.5rem;
   font-weight: 600;
+  z-index: 5;
 }
 .banner .button {
   background-color: #F8ECC2;
@@ -175,36 +188,48 @@ justify-content: space-around;
 
 /*Course section*/
 
-.courses {
-  /*background-color: white;*/
-  padding: 32px 72px;
-}
 .classes {
-  /*border:1px solid;*/
+  height: 45rem;
   /*flex commands*/
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
+
 .content_container {
-  /*border: solid 1px;*/
-  padding: 0.5rem;
-  background-color: white;
-  width: 30%;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background-color: #FDFFF8;
+  box-shadow: 10px 10px 5px #855E42;
+  height: 20rem;
   line-height: 1.5rem;
+  transition: 50ms linear;
 }
-.classes  h1 {
+.content_container:hover {
+  position:absolute;
+  height: 23rem;
+  width: 30%;
+  box-shadow: 15px 15px 5px #855E42;
+}
+.test {
+  width: 30%;
+}
+.classes  h1{
   font-size: 1.5rem;
   font-weight: 700;
+  border-bottom: solid red;
+  text-align: center;
+}
+.classes ul{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.classes li {
+  border-bottom: solid 1px;
 }
 
 /*Thesis Section */
 .thesis {
   padding: 12px 24px 32px 24px;
-  height: 35rem;
+  height: 30rem;
   /*flex commadns*/
   display: flex;
   align-items: center;
@@ -214,27 +239,26 @@ justify-content: space-around;
   border: solid 1px;
   /*flex commands*/
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
 }
-.thesis_left{
-width: 43.801rem;
+.thesis_right{
+width: 60%;
 }
-.thesis_left video{
-width: 88%;
-height: 30rem;
+.thesis_right video{
+width: 100%;
+height: 25rem;
 }
-.thesis_left .content {
- width: 87%;
+.thesis_right .content {
+ width: 100%;
 }
 
-.thesis_right {
-  width: 29.198rem;
+.thesis_left {
+  width: 40%;
   /*flex commands*/
   display: flex;
   flex-direction: column;
 }
-.thesis_right .item {
+.thesis_left .item {
   padding: 16px;
   border: solid 1px;
 
@@ -242,7 +266,7 @@ height: 30rem;
   display: flex;
   align-items: center;
 }
-.thesis_right .container {
+.thesis_left .container {
   width: 35%;
   height: auto;
 }
@@ -251,29 +275,28 @@ height: 30rem;
 
 footer{
   position: relative;
-  bottom: 6rem;
-  left: 20rem;
+  bottom: 1.75%;
+  left: 20%;
   height: 13rem;
-  background-color: #FFDD86;
   width: 15rem;
+  background: linear-gradient(#FFDD86,#F5F5DC);
   font-size: 0.7rem;
   transform: rotate(10deg);
-  box-shadow: 10px 10px 5px #888;
+  line-height: 3rem;
+  box-shadow: 10px 10px 5px #855E42;
+
   /*flex commands*/
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
 
 footer ul {
   display: flex;
   justify-content: space-between;
   width: 10rem;
-
 }
 
 footer li{
   display: flex;
-
 }
