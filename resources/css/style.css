@@ -1,6 +1,56 @@
+/* latin */
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(https://fonts.gstatic.com/s/shadowsintolight/v7/clhLqOv7MXn459PTh0gXYFK2TSYBz0eNcHnp4YqE4Ts.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika Regular'), local('Signika-Regular'), url(https://fonts.gstatic.com/s/signika/v8/AF4iYPZnDjGMiNsxxSXYQfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika Regular'), local('Signika-Regular'), url(https://fonts.gstatic.com/s/signika/v8/q41y_9MUP_N8ipOH4ORRvw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika Bold'), local('Signika-Bold'), url(https://fonts.gstatic.com/s/signika/v8/F587cG5P5ff3TX6w4JloryEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika Bold'), local('Signika-Bold'), url(https://fonts.gstatic.com/s/signika/v8/7M5kxD4eGxuhgFaIk95pBfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Rancho';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rancho Regular'), local('Rancho-Regular'), url(https://fonts.gstatic.com/s/rancho/v8/S-YcqhLwgYWxIA-a7eDp2g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/*font-family: 'Shadows Into Light', cursive;
+font-family: 'Signika', sans-serif;
+font-family: 'Rancho', cursive;*/
 html{
   font-size: 20px;
-  background-color: #F3F3F3
 }
 .container img{
   max-width: 100%;
@@ -13,6 +63,7 @@ html{
   background-size: cover;
   height: 163rem;
   width: auto;
+  font-family: 'Signika', sans-serif;
 }
 #page1 ,
 #page2{
@@ -22,9 +73,17 @@ html{
   margin-bottom: 5%;
   background-color: #FFFAE2;
   box-shadow: 5px 5px 20px #855;
-
-
-
+}
+.button {
+  border-radius: 10px;
+  font-family: 'Rancho', cursive;
+  background-color: #F8ECC2;
+  height: 32px;
+  width: 6rem;
+  /*flex commands*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*header*/
 
@@ -80,7 +139,9 @@ display: flex;
 align-items: center;
 justify-content: space-evenly;
 }
-
+.banner .button {
+  background-color: #FFB758;
+}
 .banner .container {
   width: 60%;
   height: 100%;
@@ -90,6 +151,7 @@ justify-content: space-evenly;
   width: 300px;
   height: 250px;
   background-color: #FFDD86;
+  font-family: 'Signika', sans-serif;
   /*flex commands*/
   display: flex;
   flex-direction: column;
@@ -113,25 +175,10 @@ justify-content: space-evenly;
   font-weight: 600;
   z-index: 5;
 }
-.banner .button {
-  background-color: #F8ECC2;
-  height: 32px;
-  width: 6rem;
-  /*flex commands*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media only screen and (max-width: 1024px) {
-  .banner {
-    height: 20rem;
-  }
-}
 
 /*information section*/
 
 .information_main {
-  /*border: solid 1px;*/
   /*flex commands*/
   display: flex;
   justify-content: space-between;
@@ -146,31 +193,39 @@ justify-content: space-evenly;
   flex-direction: column;
   justify-content: space-between;
 }
+.information_left .container{
+  position: relative;
+  bottom: 16px;
+}
+
 .information_left h1{
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.information_left p, h4 {
+.information_left p {
   font-size: 1.2rem;
+  font-family: 'Shadows Into Light', cursive;
 }
 .information_left h4 {
   opacity: 0.5;
+  font-size: 0.75rem;
 }
 /*right*/
-
-.information_right {
-  position: relative;
-  top: 16px; /*makes left&right images level*/
-}
 .information_right .item {
-  border-left: solid 1px;
+  border-left: solid 5px;
+  border-style: double;
+  border-color: #9C9C9C;
   padding: 16px;
   line-height: 2rem;
   /*flex commands*/
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 500ms linear;
+}
+.information_right .item:hover{
+  background-color: #FFB758;
 }
 .information_right .container {
   width: 35%;
@@ -182,8 +237,8 @@ justify-content: space-evenly;
   width: 65%;
 }
 .information_right .border_middle {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+  /*border-top: 1px solid;
+  border-bottom: 1px solid;*/
 }
 
 /*Course section*/
@@ -200,13 +255,13 @@ justify-content: space-evenly;
   background-color: #FDFFF8;
   box-shadow: 10px 10px 5px #855E42;
   height: 20rem;
+  /*width: 30%;*/
   line-height: 1.5rem;
   transition: 50ms linear;
 }
 .content_container:hover {
-  position:absolute;
-  height: 23rem;
-  width: 30%;
+  transform: scale(1.1,1.1);
+  height: 20rem;
   box-shadow: 15px 15px 5px #855E42;
 }
 .test {
@@ -236,13 +291,14 @@ justify-content: space-evenly;
   flex-direction: column;
 }
 .thesis_container {
-  border: solid 1px;
+
   /*flex commands*/
   display: flex;
   align-items: center;
 }
 .thesis_right{
 width: 60%;
+padding-left: 1rem;
 }
 .thesis_right video{
 width: 100%;
@@ -254,17 +310,22 @@ height: 25rem;
 
 .thesis_left {
   width: 40%;
+  border-right: double;
+  height: 23rem;
   /*flex commands*/
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .thesis_left .item {
   padding: 16px;
-  border: solid 1px;
-
   /*flex commands*/
   display: flex;
   align-items: center;
+  transition: 500ms linear;
+}
+.thesis_left .item:hover {
+  background-color: #FFB758
 }
 .thesis_left .container {
   width: 35%;
@@ -284,7 +345,6 @@ footer{
   transform: rotate(10deg);
   line-height: 3rem;
   box-shadow: 10px 10px 5px #855E42;
-
   /*flex commands*/
   display: flex;
   align-items: center;
@@ -295,8 +355,4 @@ footer ul {
   display: flex;
   justify-content: space-between;
   width: 10rem;
-}
-
-footer li{
-  display: flex;
 }
