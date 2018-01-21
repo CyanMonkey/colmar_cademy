@@ -61,7 +61,7 @@ html{
 .main_content {
   background-image: url("../media/images/Paper_new");
   background-size: cover;
-  height: 163rem;
+  height: 177rem;
   width: auto;
   font-family: 'Signika', sans-serif;
 }
@@ -85,13 +85,24 @@ html{
   justify-content: center;
   align-items: center;
 }
+.title{
+  text-align: center;
+  font-size: 2rem;
+  height: 3rem;
+  padding: 1rem;
+}
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  z-index: 5;
+}
 /*header*/
 
 header {
   height: 64px;
   width: 100%;
   position: fixed;
-  background: linear-gradient(#C3204C,#841552);
+  background:#56adad;
   z-index: 10;
   opacity: 0.90;
   /*flex commands*/
@@ -170,20 +181,15 @@ justify-content: space-evenly;
   justify-content: space-evenly;
   align-items: center;
 }
-.banner h1 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  z-index: 5;
-}
 
 /*information section*/
 
 .information_main {
   /*flex commands*/
   display: flex;
-  justify-content: space-between;
 }
-/*left*/
+
+
 .information_left {
   padding: 32px 24px;
   width: 65%;
@@ -197,12 +203,6 @@ justify-content: space-evenly;
   position: relative;
   bottom: 16px;
 }
-
-.information_left h1{
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .information_left p {
   font-size: 1.2rem;
   font-family: 'Shadows Into Light', cursive;
@@ -211,7 +211,8 @@ justify-content: space-evenly;
   opacity: 0.5;
   font-size: 0.75rem;
 }
-/*right*/
+
+
 .information_right .item {
   border-left: solid 5px;
   border-style: double;
@@ -229,19 +230,9 @@ justify-content: space-evenly;
 }
 .information_right .container {
   width: 35%;
-  height: auto;
-}
-.information_right .content h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 65%;
-}
-.information_right .border_middle {
-  /*border-top: 1px solid;
-  border-bottom: 1px solid;*/
 }
 
-/*Course section*/
+/*class section*/
 
 .classes {
   height: 45rem;
@@ -250,26 +241,20 @@ justify-content: space-evenly;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 .content_container {
   background-color: #FDFFF8;
   box-shadow: 10px 10px 5px #855E42;
-  height: 20rem;
-  /*width: 30%;*/
+  height: 21.25rem;
+  width: 30%;
   line-height: 1.5rem;
   transition: 50ms linear;
 }
 .content_container:hover {
   transform: scale(1.1,1.1);
-  height: 20rem;
+  height: 21.25rem;
   box-shadow: 15px 15px 5px #855E42;
 }
-.test {
-  width: 30%;
-}
 .classes  h1{
-  font-size: 1.5rem;
-  font-weight: 700;
   border-bottom: solid red;
   text-align: center;
 }
@@ -282,40 +267,37 @@ justify-content: space-evenly;
 }
 
 /*Thesis Section */
+
 .thesis {
-  padding: 12px 24px 32px 24px;
-  height: 30rem;
+  padding: 12px 24px 33px 24px;
+  height: 35rem;
   /*flex commadns*/
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
-.thesis_container {
 
+
+.thesis_container {
   /*flex commands*/
   display: flex;
   align-items: center;
 }
 .thesis_right{
-width: 60%;
-padding-left: 1rem;
+  width: 60%;
+  line-height: 1.5rem;
+  padding-left: 1rem;
 }
 .thesis_right video{
-width: 100%;
-height: 25rem;
-}
-.thesis_right .content {
- width: 100%;
+  width: 100%;
+  height: 25rem;
 }
 
+
 .thesis_left {
-  width: 40%;
   border-right: double;
-  height: 23rem;
   /*flex commands*/
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 .thesis_left .item {
   padding: 16px;
@@ -329,7 +311,6 @@ height: 25rem;
 }
 .thesis_left .container {
   width: 35%;
-  height: auto;
 }
 
 /*footer*/
@@ -350,7 +331,6 @@ footer{
   align-items: center;
   flex-direction: column;
 }
-
 footer ul {
   display: flex;
   justify-content: space-between;
