@@ -75,6 +75,10 @@ html{
   background-color: #FFFAE2;
   box-shadow: 5px 5px 20px #855;
 }
+.single_page {
+  height: 91rem;
+}   /*to fix the sticky on bottom of page. the parent element
+must have a value to use height% unit*/
 .button {
   border-radius: 10px;
   font-family: 'Rancho', cursive;
@@ -102,20 +106,24 @@ a {
 .mobile {
   display: none;
 }
-@media screen and (max-width: 480px){
+@media only screen and (max-width: 480px){
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
   .desktop {
     display: none !important; /*for removing whole sections*/
   }
   #page1,
   #page2 {
-    margin-bottom: 0%;
-    box-shadow: none;
+    all: unset;
   }
-  .main_content {
-    height:210rem;
+  .single_page {
+    position: relative;
+    top: 75px;
+    background-color: #FFFAE2;
+    box-shadow: 5px 5px 20px #855;
+    margin: 0% 10%;
+    height: auto;
   }
 }
 /*header*/
@@ -170,7 +178,6 @@ header h3{
   }
   header .content {
     display: flex;
-    justify-content: space-around;
   }
 }
 
@@ -230,7 +237,6 @@ justify-content: space-evenly;
   .banner  .content_sticky {
     width: 250px;
     height: 175px;
-    font-size:
   }
   .banner .sticky {
     height: 140px;
@@ -309,6 +315,7 @@ justify-content: space-evenly;
     display: block;
   }
 }
+
 /*class section*/
 
 .classes {
@@ -347,11 +354,6 @@ justify-content: space-evenly;
 @media only screen and (max-width: 480px) {
   .classes {
     height: 30rem;
-    /*flex commands*/
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
   }
   .content_container:not(.no-hover) {
     height: 4rem;
@@ -433,7 +435,7 @@ justify-content: space-evenly;
   }
   .thesis_right video {
     position: relative;
-    bottom: 15px;
+    bottom: 70px;
   }
 }
 
@@ -441,7 +443,7 @@ justify-content: space-evenly;
 
 .big {
   position: relative;
-  bottom: 1.75%;
+  bottom: 3%;
   left: 20%;
   height: 13rem;
   width: 15rem;
@@ -464,8 +466,9 @@ justify-content: space-evenly;
 
 @media only screen and (max-width:480px){
   .small {
+    position: relative;
+    bottom: 30px;
     opacity: 0.3;
-    height: 50px;
     /*flex commands*/
     display:flex;
     justify-content: center;
